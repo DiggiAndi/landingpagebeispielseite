@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "landingpage-webseite": {
+    "landingpagebeispielseite": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/landingpage-webseite",
+            "outputPath": "dist/landingpagebeispielseite",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -61,7 +61,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/landingpage-webseite/"
+              "baseHref": "/landingpagebeispielseite/"
             },
             "development": {
               "optimization": false,
@@ -75,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "landingpage-webseite:build:production"
+              "buildTarget": "landingpagebeispielseite:build:production"
             },
             "development": {
-              "buildTarget": "landingpage-webseite:build:development"
+              "buildTarget": "landingpagebeispielseite:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "landingpage-webseite:build"
+            "buildTarget": "landingpagebeispielseite:build"
           }
         },
         "test": {
